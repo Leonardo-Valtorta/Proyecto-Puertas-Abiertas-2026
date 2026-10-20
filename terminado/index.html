@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <title>Reservas</title>
+</head>
+<body>
+  <h1>Reservas</h1>
+
+  <img class="restaurante" src="./imagenes/restaurante.jpg" alt="restaurante" srcset="">
+
+  <h2>Bienvenido a nuestro sistema de reservas.</h2>
+  <p>Por favor, complete el formulario a continuación para reservar su mesa en nuestro restaurante.</p>
+  <p>La capacidad máxima del restaurante es de 200 personas.</p>
+
+  <form id="form-reserva">
+    <div class="campos-grid">
+      <div class="columna-campos">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text" required>
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required>
+
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" type="tel" required>
+      </div>
+
+      <div class="columna-campos">
+        <label for="fecha">Fecha</label>
+        <input id="fecha" name="fecha" type="date" required>
+
+        <label for="hora">Hora</label>
+        <p>21:30 hs.</p>
+        
+
+        <label for="personas">Cantidad de personas</label>
+        <input id="personas" name="personas" type="number" min="1" max="200" required>
+      </div>
+    </div>
+
+    <p id="rango-fechas" class="aviso-fechas"></p>
+    
+    <div class="boton">
+      <button type="submit">
+        <img src="./imagenes/calendario.png" alt="">
+        Reservar
+      </button>
+    </div>
+  </form>
+
+  <div id="reservaciones"></div>
+
+  <script src="script.js"></script>
+</main>
+</body>
+</html>
