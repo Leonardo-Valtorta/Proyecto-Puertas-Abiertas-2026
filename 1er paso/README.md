@@ -1,0 +1,69 @@
+# Creación de archivo 📄 index.html y carpeta 📂 imagenes
+
+## Indicaciones:
+* Crea un archivo con el nombre: **index.html**
+* Crea una carpeta llamada: **imagenes** 
+* Dentro de la carpeta **imagenes** coloca las imágenes que se encuentran en descargas. NO las cortes, cópialas y pégalas en dicha carpeta.
+* Dentro del archivo **index.html** copia el siguiente código:
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas</title>
+</head>
+<body>
+  <main>
+    <h1>Reservas</h1>
+
+    <img class="restaurante" src="./imagenes/restaurante.jpg" alt="restaurante" srcset="">
+
+    <h2>Bienvenido a nuestro sistema de reservas.</h2>
+    <p>Por favor, complete el formulario a continuación para reservar su mesa en nuestro restaurante.</p>
+    <p>La capacidad máxima del restaurante es de 200 personas.</p>
+
+    <form id="form-reserva">
+      <div class="campos-grid">
+        <div class="columna-campos">
+          <label for="apellido">Apellido</label>
+          <input id="apellido" name="apellido" type="text" required>
+
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required>
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" required>
+        </div>
+
+        <div class="columna-campos">
+          <label for="fecha">Fecha</label>
+          <input id="fecha" name="fecha" type="date" required>
+
+          <label for="hora">Hora</label>
+          <p>21:30 hs.</p>
+          
+
+          <label for="personas">Cantidad de personas</label>
+          <input id="personas" name="personas" type="number" min="1" max="200" required>
+        </div>
+      </div>
+
+      <p id="rango-fechas" class="aviso-fechas"></p>
+      
+      <div class="boton">
+        <button type="submit">
+          <img src="./imagenes/calendario.png" alt="">
+          Reservar
+        </button>
+      </div>
+    </form>
+
+    <div id="reservaciones"></div>
+
+  </main>
+</body>
+</html>
+```
+* Guarda el archivo y visualiza ¿cómo ha quedado en el navegador?. (uliliza Go-Live para ver dicha página).

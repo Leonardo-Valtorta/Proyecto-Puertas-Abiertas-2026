@@ -1,0 +1,200 @@
+# Creación de archivo 📄 estilos.css 
+
+## Indicaciones:
+* En el archivo: **index.html** reemplaza el bloque de la etiqueta \<head\> por este otro:
+```
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <title>Reservas</title>
+</head>
+```
+* En la carpeta raíz, crea un archivo con el nombre: **estilos.css**
+* Dentro del archivo **estilos.css** copia el siguiente código:
+
+```
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 1rem;
+	color: #24302b;
+	background: #c77e34;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+	font-family: "Cookie", cursive;
+	font-size: 70px;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.restaurante {
+	border-radius: 12px;
+	box-shadow: 0 4px 18px rgb(50, 50, 50);
+	max-width: 1000px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+p {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  max-width: 1000px;
+}
+
+
+form {
+	background: #e4c16e;
+	padding: 0.75rem;
+	border-radius: 12px;
+	margin: 1rem auto 0;
+	max-width: 1000px;
+}
+
+.campos-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.columna-campos {
+	display: grid;
+	grid-template-columns: max-content minmax(0, 1fr);
+	align-items: center;
+	gap: 0.75rem 0.8rem;
+}
+
+.columna-campos > label {
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	min-width: 0;
+	min-height: 42px;
+	padding: 0.6rem 0.75rem;
+	border: 1px solid #bdc9c1;
+	border-radius: 6px;
+}
+
+input:focus-visible,
+button:focus-visible {
+	outline: 3px solid #8fc9a9;
+	outline-offset: 2px;
+}
+
+.boton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1.5rem auto 0.5rem;
+}
+
+.boton button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	min-width: 150px;
+	min-height: 48px;
+	padding: 0.7rem 1rem;
+	border: 0;
+	border-radius: 6px;
+	color: #fff;
+	background: #23834e;
+	box-shadow: 5px 5px 10px rgb(50, 50, 50);
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.boton button img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+button:hover {
+	background: #19683d;
+}
+
+#reservaciones {
+	max-width: 1000px;
+	margin: 1rem auto;
+}
+
+#reservaciones h2 {
+	margin-bottom: 0.5rem;
+}
+
+.aviso-fechas,
+.rango-reservaciones {
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+.aviso-fechas {
+	margin: 0.75rem 0 0;
+	text-align: left;
+}
+
+.rango-reservaciones {
+	margin: 0.5rem 0 1rem;
+}
+
+.tabla-reservaciones-scroll {
+	max-height: 420px;
+	overflow: auto;
+	border: 1px solid #c4d5c9;
+	border-radius: 6px;
+}
+
+.tabla-reservaciones {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+.tabla-reservaciones th,
+.tabla-reservaciones td {
+	padding: 0.7rem 0.85rem;
+	border-bottom: 1px solid #d8e0da;
+	text-align: left;
+}
+
+.tabla-reservaciones th {
+	position: sticky;
+	top: 0;
+	color: #fff;
+	background: #23834e;
+}
+
+.tabla-reservaciones tbody tr:nth-child(even) {
+	background: #f1f5f2;
+}
+```
+* Guarda el archivo y observa ¿cómo ha quedado en el navegador?
+* En el archivo **estilos.css** prueba de cambiar el color de fondo de la página; para ello, dirígete a: *body*, dentro de él busca: *background*; coloca el puntero del mouse en el cuadradito de color marrón y elige un color de tu preferencia. Guarda los cambios y luego visualiza ese cambio en el navegador.
+* También cambia en *h1* el *font-family*; establécelo a: *Comic Sans MS, Comic Sans, cursive*.  Guarda los cambios y luego visualiza ese cambio en el navegador.
+* Ahora cambiemos el ancho del botón. En: *.boton button* cambiemos el estilo *min-width: 150px;* por *min-width: 400px;*. Guarda los cambios y luego visualiza ese cambio en el navegador.
